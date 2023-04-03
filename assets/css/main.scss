@@ -1,0 +1,105 @@
+---
+---
+
+@charset "utf-8";
+
+/*
+ Color palette:
+ hightlights:
+    #6ceded
+    #6cb9c9
+    #6d85a5
+ content:
+    #6e5181
+    #4f1446
+    #2e0a30
+    #0d001a
+ */
+
+$text: #f1f1f1;
+$text-strong: $text;
+$text-light: #ffffff;
+
+$link: $text;// #de85b9;
+
+
+$scheme-main    : #383838;
+$scheme-main-bis: #33252c;
+$scheme-main-ter: #262626;
+
+$scheme-invert    : #bef6a1;
+$scheme-invert-bis: #c7c7c7;
+$scheme-invert-ter: #d9d9d9;
+
+$body-background-color: $scheme-main;
+$footer-background-color: $scheme-main-ter;
+
+$navbar-background-color: #41095e;
+$navbar-item-hover-background-color: $scheme-main;
+$navbar-item-active-background-color: $scheme-main;
+
+@import "bulma";
+
+
+// Collapsible
+.collapsible {
+   background-color: #00000000;
+   color: $text;
+   width: 100%;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   text-align: left;
+   font-size: $size-4;
+}
+
+.collapsible:after {
+   content: "^";
+   color: #606060;
+   font-size: $size-3;
+   float: right;
+   transform: rotate(90deg);
+
+   transition: transform 0.3s, color 0.3s ease-out;
+}
+
+.collapsible.is-active:after {
+   color: #E30B5C;
+   transform: rotate(180deg);
+}
+
+.collapsible-content {
+   overflow: hidden;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+}
+
+
+// Side navigation bar
+.sidenav {
+   position: sticky;
+   overflow-x: hidden;
+   overflow-y: auto;
+   top: 0px;
+   width: 100%;
+   max-height: 100vh;
+}
+
+
+// For styling
+.has-background-scheme-main {
+   background-color: $scheme-main;
+}
+
+.has-background-scheme-main-bis {
+   background-color: $scheme-main-bis;
+}
+
+.has-background-scheme-main-ter {
+   background-color: $scheme-main-ter;
+}
+
+.rounded {
+   border-radius: 50%;
+}

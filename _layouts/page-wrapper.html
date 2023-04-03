@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-brand ml-6 mr-4">
+          <a class="navbar-item" style="color: inherit" href="/">
+            <div><b>{{ site.title }}</b></div>
+          </a>
+        </div>
+
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a id="NavAboutMe" class="navbar-item" href="/">About Me</a>
+            <a id="NavProjects" class="navbar-item" href="/projects">Projects</a>
+            <a id="NavPortfolio" class="navbar-item" href="/portfolio">Portfolio</a>
+          </div>
+          <script>
+            var pathname = window.location.pathname;
+            var active;
+
+            if (pathname.startsWith("/projects")) {
+              active = document.getElementById("NavProjects");
+            } else if (pathname.startsWith("/portfolio")) {
+              active = document.getElementById("NavPortfolio");
+            } else {
+              active = document.getElementById("NavAboutMe");
+            }
+
+            active.classList.add("is-active");
+          </script>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div style="min-height: 80vh;">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="columns is-gapless">
+        <div class="column">
+          <div class="columns">
+            <div class="column has-text-centered">
+              <a href="https://www.github.com/Khusheete">
+                <figure class="image is-32x32"><img src="{{ '/assets/images/github-mark-white.svg' | relative_url }}"></img></figure>
+              </a>
+            </div>
+            <div class="column has-text-centered">
+              <a href="https://khusheete.itch.io/">
+                <figure class="image is-32x32"><img src="{{ '/assets/images/itchio-logo-textless-white.svg' | relative_url }}"></img></figure>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column has-text-centered">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+          </a>
+          <br/>
+          This website is under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="{{ '/assets/js/collapsible.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+---
+layout: "page-wrapper"
+
+---
+
+<style>
+    .logo {
+       width: 1.2em;
+       height: 1.2em;
+       vertical-align: middle;
+    }
+</style>
+
+<div class="columns">
+    <div class="column is-one-fifth has-background-scheme-main-bis pt-5">
+        <aside class="menu sidenav">
+            <ul class="menu-list">
+                <li>
+                    <button class="collapsible">
+                        <img class="logo rounded" src="{{ 'assets/images/processing-icon.png' | relative_url }}"></img>
+                        Processing
+                    </button>
+                    <ul class="collapsible-content">
+                        <!-- Here go processing projects <li></li> -->
+                    </ul>
+                </li>
+                <li>
+                    <button class="collapsible">
+                        <img class="logo" src="{{ 'assets/images/godot-logo.svg' | relative_url }}"></img>
+                        Godot Engine
+                    </button>
+                    <ul class="collapsible-content">
+                        <!-- Here go godot projects <li></li> -->
+                    </ul>
+                </li>
+                <li>
+                    <button class="collapsible">
+                        <img class="logo" src="{{ 'assets/images/rust-logo-blk.svg' | relative_url }}"></img>
+                        Rust
+                    </button>
+                    <ul class="collapsible-content">
+                        <!-- Here go rust projects <li></li> -->
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <div class="column">
+        {{ content }}
+    </div>
+</div>
