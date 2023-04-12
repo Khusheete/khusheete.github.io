@@ -11,41 +11,67 @@ layout: "page-wrapper"
     }
 </style>
 
-<div class="columns">
-    <div class="column is-one-fifth has-background-scheme-main-bis pt-5">
-        <aside class="menu sidenav">
-            <ul class="menu-list">
-                <li>
-                    <button class="collapsible">
-                        <img class="logo rounded" src="{{ 'assets/images/processing-icon.png' | relative_url }}"></img>
-                        Processing
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go processing projects <li></li> -->
-                    </ul>
-                </li>
-                <li>
-                    <button class="collapsible">
-                        <img class="logo" src="{{ 'assets/images/godot-logo.svg' | relative_url }}"></img>
-                        Godot Engine
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go godot projects <li></li> -->
-                    </ul>
-                </li>
-                <li>
-                    <button class="collapsible">
-                        <img class="logo" src="{{ 'assets/images/rust-logo-blk.svg' | relative_url }}"></img>
-                        Rust
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go rust projects <li></li> -->
-                    </ul>
-                </li>
-            </ul>
-        </aside>
+<div class="columns" style="min-height: 85vh;">
+    <div class="column is-one-fifth has-background-scheme-main-bis pt-5 pr-0">
+        <div class="sidenav-container">
+            <aside class="menu sidenav pr-3">
+                <ul class="menu-list">
+                    <li>
+                        <button class="collapsible project-platform" data-platform-name="processing">
+                            <img class="logo rounded" src="{{ 'assets/images/processing-icon.png' | relative_url }}"></img>
+                            Processing
+                        </button>
+                        <ul class="collapsible-content">
+                            <!-- Here go processing project links -->
+                            <li><a class="project-link" data-link="processing/anti-tic-tac-toe">Anti Tic-Tac-Toe</a></li>
+                            <li><a class="project-link" data-link="processing/astar">A* Visualisation</a></li>
+                            <li><a class="project-link" data-link="processing/battle">Battle</a></li>
+                            <li><a class="project-link" data-link="processing/chronometer">Chronometer</a></li>
+                            <li><a class="project-link" data-link="processing/collatz">Collatz Conjecture Visualisation</a></li>
+                            <li><a class="project-link" data-link="processing/datasaurus-dozen">Datasaurus Dozen</a></li>
+                            <li><a class="project-link" data-link="processing/fireworks">Firework Simulation</a></li>
+                            <li><a class="project-link" data-link="processing/heat-diffusion">Diffusion Equation</a></li>
+                            <li><a class="project-link" data-link="processing/lagrange-poly">Lagrange Polynomial</a></li>
+                            <li><a class="project-link" data-link="processing/lissajous-curve-table">Lissajous Curve</a></li>
+                            <li><a class="project-link" data-link="processing/mod-primes">Mod Primes</a></li>
+                            <li><a class="project-link" data-link="processing/obj-gravitation">Object Gravitation</a></li>
+                            <li><a class="project-link" data-link="processing/pi-fight">π Fight</a></li>
+                            <li><a class="project-link" data-link="processing/quadtree-collision">Quadtree Collision</a></li>
+                            <li><a class="project-link" data-link="processing/rubiks-cube-1x1x1">Rubik's Cube 1x1x1</a></li>
+                            <li><a class="project-link" data-link="processing/sort-visualisation">Sort Visualisation</a></li>
+                            <li><a class="project-link" data-link="processing/sudoku-solver">Sudoku Solver</a></li>
+                            <li><a class="project-link" data-link="processing/territ">Territ</a></li>
+                            <!-- <li><a class="project-link" data-link="processing/shrinking-darts">Shrinking Darts</a></li> -->
+
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="collapsible">
+                            <img class="logo" src="{{ 'assets/images/godot-logo.svg' | relative_url }}"></img>
+                            Godot Engine
+                        </button>
+                        <ul class="collapsible-content">
+                            <!-- Here go godot projects <li></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="collapsible">
+                            <img class="logo" src="{{ 'assets/images/rust-logo-blk.svg' | relative_url }}"></img>
+                            Rust
+                        </button>
+                        <ul class="collapsible-content">
+                            <!-- Here go rust projects <li></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <hr class="mt-0 mb-0">
+        </div>
     </div>
-    <div class="column">
+    <div class="column mx-2 my-2">
         {{ content }}
     </div>
 </div>
+
+
+<script src="{{ 'assets/js/project-sidenav.js' | relative_url }}"></script>
