@@ -29,7 +29,6 @@ function instanciateCollapsible(col) {
 document.addEventListener("DOMContentLoaded", function() {
 
     var colls = document.getElementsByClassName("collapsible");
-    console.log("COLLAPSIBLE INIT");
 
     for (var i = 0; i < colls.length; i++) {
         instanciateCollapsible(colls[i]);
