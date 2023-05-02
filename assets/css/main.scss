@@ -21,22 +21,27 @@ $text-strong: $text;
 $text-light: #ffffff;
 $text-invert: #0e0e0e;
 
-$link: #254cfa;// #de85b9;
-$link-hover: #dab305;
+$link: #ad2f8a;
+$link-hover: #4ea9c5;
 
 
-$scheme-main    : #383838;
-$scheme-main-bis: #33252c;
-$scheme-main-ter: #262626;
+$scheme-main    : #3d3d3d;
+$scheme-main-bis: #333333;
+$scheme-main-ter: #45283C;
 
-$scheme-invert    : #bef6a1;
+$scheme-invert    : #9bf56e;
 $scheme-invert-bis: #c7c7c7;
 $scheme-invert-ter: #d9d9d9;
+
+$background: $scheme-main;
+
+$code: #9e9e9e;
+$code-background: $scheme-main-bis;
 
 $body-background-color: $scheme-main;
 $footer-background-color: $scheme-main-ter;
 
-$navbar-background-color: #41095e;
+$navbar-background-color: #562868;
 $navbar-item-hover-background-color: $scheme-main;
 $navbar-item-hover-color: $text;
 $navbar-item-active-background-color: $scheme-main;
@@ -116,10 +121,25 @@ $menu-item-active-background-color: $menu-item-hover-background-color;
    background-color: $scheme-main-ter;
 }
 
+.has-text-normal {
+   color: $text;
+}
+
+.has-text-normal:hover {
+   color: $text
+}
+
 .rounded {
    border-radius: 50%;
 }
 
 .bullet-point li::before {
    content: '• '
+}
+
+
+.logo {
+   width: 1.2em;
+   height: 1.2em;
+   vertical-align: middle;
 }
