@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{ site.profile-pict }}"><link/>
     <title>{{ site.title }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
@@ -13,7 +14,8 @@
       <nav class="navbar">
         <div class="navbar-brand ml-6 mr-4">
           <a class="navbar-item" style="color: inherit" href="/">
-            <div><b>{{ site.title }}</b></div>
+            <img src="{{ site.profile-pict }}" style="width=300px; height=2em;"><img/>
+            <div><b>&nbsp;{{ site.title }}</b></div>
           </a>
         </div>
 
@@ -53,13 +55,13 @@
           <div class="columns">
             <div class="column has-text-centered">
               <a class="has-text-normal" href="https://www.github.com/Khusheete">
-                <img class="logo" src="{{ '/assets/images/github-mark-white.svg' | relative_url }}"></img>
+                <img class="logo" src="{{ '/assets/images/icons/github-mark-white.svg' | relative_url }}"></img>
                 Github
               </a>
             </div>
             <div class="column has-text-centered">
               <a class="has-text-normal" href="https://khusheete.itch.io/">
-                <img class="logo" src="{{ '/assets/images/itchio-logo-textless-white.svg' | relative_url }}"></img>
+                <img class="logo" src="{{ '/assets/images/icons/itchio-logo-textless-white.svg' | relative_url }}"></img>
                 Itch.io
               </a>
             </div>
