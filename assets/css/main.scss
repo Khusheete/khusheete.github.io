@@ -149,9 +149,3 @@ $menu-item-active-background-color: $menu-item-hover-background-color;
 }
 
 
-// Bulma fixes...
-
-navbar-item.is-active:hover {
-   color: $navbar-item-active-background-color;
-   background-color: $navbar-item-active-background-color;
-}
