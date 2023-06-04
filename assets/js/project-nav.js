@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Open sidenav platform
     var platforms = document.getElementsByClassName("project-platform");
 
-    for (var i = 0; i < platforms.length; i++) {
-        var platform = platforms[i];
+    if (getWidth() > 768) { // on phone, don't open the project's platform
+        for (var i = 0; i < platforms.length; i++) {
+            var platform = platforms[i];
 
-        if (path.startsWith("/projects/" + platform.dataset.platformName)) {
-            platform.activate();
+            if (path.startsWith("/projects/" + platform.dataset.platformName)) {
+                platform.activate();
+            }
         }
     }
 
