@@ -44,9 +44,11 @@ $body-background-color: $scheme-main;
 $footer-background-color: $scheme-main-ter;
 
 $navbar-background-color: #562868;
-$navbar-item-hover-background-color: $scheme-main;
+// $navbar-item-hover-background-color: $scheme-main;
+$navbar-item-hover-background-color: #3f1e4d;
 $navbar-item-hover-color: $text;
-$navbar-item-active-background-color: $scheme-main;
+// $navbar-item-active-background-color: $scheme-main;
+$navbar-item-active-background-color: #3f1e4d;
 
 $menu-item-hover-color: $text-invert;
 $menu-item-hover-background-color: $scheme-invert-bis;
@@ -144,4 +146,12 @@ $menu-item-active-background-color: $menu-item-hover-background-color;
    width: 1.2em;
    height: 1.2em;
    vertical-align: middle;
+}
+
+
+// Bulma fixes...
+
+navbar-item.is-active:hover {
+   color: $navbar-item-active-background-color;
+   background-color: $navbar-item-active-background-color;
 }
