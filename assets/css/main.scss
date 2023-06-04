@@ -33,7 +33,8 @@ $scheme-invert    : #9bf56e;
 $scheme-invert-bis: #c7c7c7;
 $scheme-invert-ter: #d9d9d9;
 
-$primary: #6d9685;
+$primary: #607e72;
+$lighter-primary: #749789;
 
 $background: $scheme-main;
 
@@ -149,3 +150,14 @@ $menu-item-active-background-color: $menu-item-hover-background-color;
 }
 
 
+.project-highlight {
+   background-color: $primary;
+   color: $text;
+}
+
+.project-highlight:hover {
+   background-color: $lighter-primary;
+   color: $text;
+
+   transition: background-color 0.2s ease-in-out;
+}
