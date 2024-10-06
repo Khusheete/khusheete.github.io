@@ -1,0 +1,258 @@
+
+/* ===== General styling ===== */
+
+@property --primary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #562868;
+}
+
+@property --dark-primary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #3f1e4d;
+}
+
+@property --secondary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #45283c;
+}
+
+@property --accent-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ad644c;
+}
+
+@property --secondary-accent-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #4ea9c5;
+}
+
+/* ===== Specific styling ===== */
+
+@property --text-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #f1f1f1;
+}
+
+@property --light-text-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ffffff;
+}
+
+@property --dark-text-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #0e0e0e;
+}
+
+@property --link-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #4ea9c5;
+}
+
+@property --link-hover-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #859fa7;
+}
+
+@property --background-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #3d3d3d;
+}
+
+@property --dark-background-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #2e2e2e;
+}
+
+/* ===== Content ===== */
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a, a:visited {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+.logo {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.pixelart {
+    image-rendering: pixelated;
+}
+
+.normal-text-link,
+.normal-text-link:hover,
+.normal-text-link:visited {
+    color: var(--text-color);
+}
+
+.project-showcase > .project-link {
+    color: var(--link-color);
+    text-align: center;
+    border-radius: 5px;
+    background: var(--dark-background-color);
+    padding: 10px;
+    margin: 5px;
+    height: calc(100% - 30px);
+    display: block;
+}
+
+.project-showcase > .project-link:hover {
+    color: var(--accent-color);
+    filter: brightness(110%);
+
+    transition: filter 0.2s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ===== Vertical line ===== */
+
+.v-line {
+    border-left: 1px solid #707070;
+    padding-left: 1px;
+}
+
+/* ===== Navbar ===== */ 
+
+.navbar {
+    background-color: var(--primary-color);
+    padding-left: 2%;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: var(--text-color);
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+.navbar-list {
+    padding-left: 1.5rem;
+}
+
+.navbar-link,
+.navbar-item {
+    min-height: 2.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.pure-menu-item > .navbar-link:hover {
+    color: var(--accent-color);
+    background-color: var(--dark-primary-color);
+}
+
+.pure-menu-selected > .navbar-link,
+.pure-menu-selected > .navbar-link:visited {
+    color: var(--accent-color);
+    background-color: var(--dark-primary-color);
+}
+
+/* ===== Menu ===== */
+
+.pure-menu-item > .pure-menu-link,
+.pure-menu-heading > .pure-menu-link,
+.pure-menu > .pure-menu-heading {
+    color: var(--text-color);
+    text-transform: none;
+}
+
+/* ===== Footer ===== */
+
+.footer {
+    background-color: var(--secondary-color);
+    padding: 1em;
+}
+
+/* ===== Collapsible ===== */
+
+.collapsible {
+    background-color: #00000000;
+    color: var(--text-color);
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 22px;
+}
+ 
+.collapsible:after {
+    content: "^";
+    color: var(--text-color);
+    font-size: 26px;
+    float: right;
+    transform: rotate(90deg);
+ 
+    transition: transform 0.3s, color 0.3s ease-out;
+}
+ 
+.collapsible.is-active:after {
+    color: var(--accent-color);
+    transform: rotate(180deg);
+}
+ 
+.collapsible-content {
+    overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    margin-left: 4px;
+    padding-left: 5px;
+    border-left: 2px solid var(--background-color);
+    margin-bottom: 10px;
+}
+
+/* ===== Sidenav ===== */
+
+.sidenav {
+    background-color: var(--dark-background-color);
+    min-height: 100%;
+    padding: 7px 5px 7px 5px;
+}
+
+.project-link {
+    text-wrap: balance;
+}
+
+.pure-menu-item > .project-link:hover,
+.pure-menu-item > .project-link:is(.is-active) {
+    color: var(--accent-color);
+    background-color: var(--background-color);
+}

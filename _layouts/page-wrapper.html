@@ -3,37 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="{{ site.profile-pict }}"><link/>
+    <link rel="icon" type="image/x-icon" href="{{ site.pixel-profile-pict }}"><link/>
     <title>{{ site.title }}</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <script src="{{ '/assets/js/queries.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/collapsible.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/navbar-burger.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/navbar_burger.js' | relative_url }}"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="navbar-brand mr-4" style="margin-left: 2%;">
-          <a class="navbar-item" style="color: inherit" href="/">
-            <img src="{{ site.profile-pict }}"/>
-            <div><b>&nbsp;{{ site.title }}</b></div>
-          </a>
+      <div class="navbar pure-menu pure-menu-horizontal">
+        <a class="navbar-brand pure-menu-heading pure-menu-link" href="/">
+          <img class="pixelart" src="{{ site.pixel-profile-pict }}" style="vertical-align: middle; width: 2em; height: 2em;"/>
+          <b>&nbsp;{{ site.title }}</b>
+        </a>
+        
+        <ul class="navbar-list pure-menu-list">
+          <li id="NavAboutMe" class="navbar-item pure-menu-item">
+            <a class="navbar-link pure-menu-link" href="/">About Me</a>
+          </li><!--
+          --><li id="NavProjects"  class="navbar-item pure-menu-item">
+            <a class="navbar-link pure-menu-link" href="/projects">Projects</a>
+          </li><!--
+          --><li id="NavPortfolio" class="navbar-item pure-menu-item" href="/portfolio">
+            <a class="navbar-link pure-menu-link" href="/portfolio">Portfolio</a>
+          </li>
 
-          <a class="navbar-burger" data-target="navbar-main-menu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div class="navbar-menu" id="navbar-main-menu">
-          <div class="navbar-start">
-            <a id="NavAboutMe" class="navbar-item" href="/">About Me</a>
-            <a id="NavProjects" class="navbar-item" href="/projects">Projects</a>
-            <a id="NavPortfolio" class="navbar-item" href="/portfolio">Portfolio</a>
-          </div>
-          <div class="navbar-end"></div>
           <script>
             var pathname = window.location.pathname;
             var active;
@@ -46,10 +44,10 @@
               active = document.getElementById("NavAboutMe");
             }
 
-            active.classList.add("is-active");
+            active.classList.add("pure-menu-selected");
           </script>
-        </div>
-      </nav>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -58,18 +56,18 @@
       </div>
     </main>
 
-    <footer class="footer"> <!-- TODO: Add links to navigate website && small description of who I am -->
-      <div class="columns is-gapless">
-        <div class="column">
-          <div class="columns">
-            <div class="column has-text-centered">
-              <a class="has-text-normal" href="https://www.github.com/Khusheete">
+    <footer class="footer">
+      <div class="pure-g">
+        <div class="pure-u-2-3">
+          <div class="pure-g">
+            <div class="pure-u-1-2">
+              <a class="normal-text-link" href="https://www.github.com/Khusheete">
                 <img class="logo" src="{{ '/assets/images/icons/github-mark-white.svg' | relative_url }}"></img>
                 Github
               </a>
             </div>
-            <div class="column has-text-centered">
-              <a class="has-text-normal" href="https://khusheete.itch.io/">
+            <div class="pure-u-1-2">
+              <a class="normal-text-link" href="https://khusheete.itch.io/">
                 <img class="logo" src="{{ '/assets/images/icons/itchio-logo-textless-white.svg' | relative_url }}"></img>
                 Itch.io
               </a>
@@ -77,12 +75,14 @@
           </div>
         </div>
 
-        <div class="column has-text-centered">
-          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+        <div class="pure-u-1-3" style="text-align: center;">
+          <div class="v-line" style="padding-left: 10px;"/>
+          <a style="vertical-align: center; float: left;" rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License" style="border-width: 0;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
           </a>
-          <br/>
-          This website is under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+          <span>
+            This website is under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+          </span>
         </div>
       </div>
     </footer>
