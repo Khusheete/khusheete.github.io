@@ -162,6 +162,19 @@ img {
     }
 }
 
+/* ===== ItchIo link =====*/
+
+.itchio-game {
+    width: 552px;
+    height: 167px;
+}
+
+@media (max-width: 48em) {
+    .itchio-game {
+        width: 208px;
+    }
+}
+
 /* ===== Vertical line ===== */
 
 .v-line {
