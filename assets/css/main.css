@@ -241,6 +241,12 @@ img {
 
 /* ===== Sidenav ===== */
 
+#sidenav-content-container {
+    min-height: 85vh;
+    flex-flow: unset; /* make sure the sidenav takes up all the height */
+}
+
+
 .sidenav {
     background-color: var(--dark-background-color);
     min-height: 100%;
@@ -255,4 +261,17 @@ img {
 .pure-menu-item > .project-link:is(.is-active) {
     color: var(--accent-color);
     background-color: var(--background-color);
+}
+
+
+/* Responsive sidenav */
+@media (max-width: 48em) {
+
+    .sidenav {
+        min-height: 0%;
+    }
+
+    #sidenav-content-container {
+        flex-flow: wrap;
+    }
 }
