@@ -80,6 +80,18 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Extend main to extent to the extent of the page */
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 1em;
 }
 
 .content {
@@ -200,13 +212,6 @@ img {
 .pure-menu > .pure-menu-heading {
     color: var(--text-color);
     text-transform: none;
-}
-
-/* ===== Footer ===== */
-
-.footer {
-    background-color: var(--secondary-color);
-    padding: 1em;
 }
 
 /* ===== Collapsible ===== */
