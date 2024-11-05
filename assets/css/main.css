@@ -162,6 +162,10 @@ img {
     }
 }
 
+.has-text-centered {
+    text-align: center;
+}
+
 /* ===== ItchIo link =====*/
 
 .itchio-game {
