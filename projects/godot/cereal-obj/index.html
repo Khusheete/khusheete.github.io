@@ -1,0 +1,70 @@
+---
+layout: "projects"
+---
+
+<h1 class="title">Cereal Object</h1>
+
+<p>
+    This is a serialization format inspired by JSON that I made for the godot engine. The idea was to have a format that
+    is strongly typed (unlike json which considers ints and floats the same) and that has support for godot's primitive
+    types (Vectors, Transfroms, Rect, AABB, packed arrays...).
+</p>
+<p>
+    Here is what a cereal object string looks like:
+</p>
+<pre>
+{
+    a: "b",
+    boolean: false,
+    not_boolean: true,
+    "super duper complex name": true,
+    string_array: [String,
+        "a",
+        "b",
+        "c"
+    ],
+    float_array: [f64,
+        1f,
+        2f,
+        3f,
+        -0.0000006f
+    ],
+    int_array: [i32,
+        2,
+        1,
+        3,
+        4,
+        7,
+        11,
+        18,
+        29,
+        47
+    ],
+    array: [
+        "A",
+        2,
+        3f,
+        {
+            nested_stuff: 3.141592654f,
+            super_mega_nested: {
+                secret: "password"
+            }
+        }
+    ],
+    rect: Rect2(1f, 2f; 3.1415f, 4f),
+    recti: Rect2i(666i, -42i; 47i, 32i),
+    "some vector": Vector2i(6i, 7i),
+    aabb: AABB(-5.2f, 7.9f, 3.1415927f; 12.5f, 1f, -95.2f),
+    transform: Transform3D(
+        0.09597263f, 0.5049345f, 0.132819f  ;
+        0.1372523f , 0.8690669f, 0.55455375f;
+        0.96561974f, 0.7665665f, 0.1779638f ;
+        0.64600086f, 0.8919131f, 0.3106943f
+    ),
+    crimson: Color(220, 20, 60, 255)
+}
+</pre>
+<br/>
+<p>
+    The source code is available under the MIT license on <a href="https://github.com/Khusheete/cereal-object">github</a>.
+</p>
