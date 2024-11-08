@@ -1,0 +1,33 @@
+---
+layout: "projects"
+---
+
+<h1 class="title">Terminal Path Tracing</h1>
+
+<p>
+    This project builds off of my <a href="/projects/rust/terminal-renderer">Terminal Renderer</a> to render an image in
+    the terminal.
+</p>
+<p>
+    It currently only contains an unoptimized CPU path tracer wich does not support advanced materials.
+    This implementation is a prototype I made to figure out how to architecture one. This project's goal is to
+    create a path tracer on the graphics card using the Vulkan API, and have it run in <i>real time</i> in the terminal.
+    A full light simulation should be possible as the rendering surface is quite small, and the terminal renderer allows
+    to draw images quite fast as long as images are quite close from one frames to the next.
+</p>
+<p>
+    To achieve that goal, I've been reading about Vulkan on the
+    <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html">khronos specification page</a>
+    and in the <a href="https://docs.vulkan.org/spec/latest/chapters/raytracing.html">vulkan.org documentation</a>. I've
+    also been experimenting with <a href="https://github.com/ash-rs/ash">ash</a>, a library implementing Vulkan bindings
+    for the rust programming language.
+</p>
+<br/>
+<p>
+    The source code is available on <a href="https://github.com/Khusheete/term-path-tracing">github</a> under the MIT
+    license.
+</p>
+
+<div class="has-text-centered">
+    <div class="pure-u-2-3"><img src="screen0.png"/></div>
+</div>
