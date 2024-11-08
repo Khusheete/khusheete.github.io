@@ -4,12 +4,16 @@ layout: "projects"
 
 <h1 class="title">Rust Terminal Renderer</h1>
 <p>
-    An (experimental) console renderer library in rust (for linux).
+    A console renderer library in rust (only supports linux for now).
 
-    It has support for drawing simple shapes, images (with a color used for transparency), and user keyboard and mouse input.
+    It has support for drawing simple shapes, images (with a color used for transparency), and user keyboard and mouse
+    input. It implements some optimizations to minimize the number of characted drawn to the console, as printing to it
+    is a really slow operation.
 </p>
 <br/>
-<p>Source Code: <a href="https://github.com/Khusheete/simple-term-renderer">https://github.com/Khusheete/simple-term-renderer</a></p>
-<p>License: MIT-0</p>
+<p>
+    The source code is available on <a href="https://github.com/Khusheete/simple-term-renderer">github</a> under the MIT
+    license.
+</p>
 <br/>
 <img src="screen0.png"></img>
