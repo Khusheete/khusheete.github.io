@@ -1,0 +1,22 @@
+---
+layout: "projects"
+---
+
+<h1 class="title">Lambda Calculus Implementation</h1>
+
+<p>
+    This is an interpreter/repl for a custom &lambda;-calculus dialect I made to play around with this very interesting bit of mathematics and computer science.
+</p>
+<p>
+    It implements both "lazy" and "strict" <a href="https://en.wikipedia.org/wiki/Lambda_calculus#%CE%B2-reduction">&beta;-reduction</a>
+    (this is akin to strict and lazy evaluation).
+    Strict &beta;-reduction is the usual way programs are executed in most programing languages, and allows to create
+    most programs in this &lambda;-calculus dialect. However <code>for</code> and <code>while</code> loops require some
+    use of the <a href="https://en.wikipedia.org/wiki/Fixed-point_combinator">Y combinator</a> which leads to an infinite loop
+    when using strict &beta;-reduction, will lead in an infinite loop. This is why there is a need for lazy
+    &beta;-reduction. It allows the implementation of a general purpuse loops that can be used afterwards.
+</p>
+<br/>
+<p>
+    The source code is available on <a href="https://github.com/Khusheete/LambdaCalculus">github</a> under the MIT license.
+</p>
