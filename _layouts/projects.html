@@ -8,6 +8,54 @@ layout: "page-wrapper"
         <aside class="pure-menu"> <!-- TODO: is hidden mobile -->
             <ul class="pure-menu-list">
                 <li class="pure-menu-item">
+                    <button class="collapsible project-platform" data-platform-name="godot">
+                        <img class="logo" src="{{ 'assets/images/icons/godot-logo.svg' | relative_url }}"></img>
+                        Godot Engine
+                    </button>
+                    <ul class="collapsible-content">
+                        <!-- Here go godot projects -->
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/caryopsis">Caryopsis</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/ait">AI Tooling</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/camera-plus">Camera Plus</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/cereal-obj">Cereal Object</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/custom-cursor">Custom Cursor</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/finite-state-machine">Finite State Machine</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/in-sunder">In Sunder</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/rubiks-cube">Rubik's Cube</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/rumbo">Rumbo</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/platformer-prototype">Simple Platformer Prototype</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/the-other-side">The Other Side</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/in-blood-letters">In Blood Letters</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/faetal-coins">Faetal Coins</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/mix-match-pro">Mix Match Pro</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/mandelbrot-map">Mandelbrot Map</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="collapsible project-platform" data-platform-name="cpp">
+                        <img class="logo" src="{{ 'assets/images/icons/c-icon.svg' | relative_url }}"></img>
+                        C/C++
+                    </button>
+                    <ul class="collapsible-content">
+                        <!-- Here go C/C++ projects -->
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/console-renderer">Console Renderer</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/lixy-engine">Lixy Engine</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/seqlang">Sequentialang</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
+                    <button class="collapsible project-platform" data-platform-name="rust">
+                        <img class="logo" src="{{ 'assets/images/icons/rust-logo-blk.svg' | relative_url }}"></img>
+                        Rust
+                    </button>
+                    <ul class="collapsible-content">
+                        <!-- Here go rust projects -->
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/netscan">Network Scanner</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/term-path-tracing">Terminal Path Tracing</a></li>
+                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/terminal-renderer">Terminal Renderer</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item">
                     <button class="collapsible project-platform" data-platform-name="processing">
                         <img class="logo rounded" src="{{ 'assets/images/icons/processing-icon.png' | relative_url }}"></img>
                         Processing
@@ -36,30 +84,6 @@ layout: "page-wrapper"
                     </ul>
                 </li>
                 <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="godot">
-                        <img class="logo" src="{{ 'assets/images/icons/godot-logo.svg' | relative_url }}"></img>
-                        Godot Engine
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go godot projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/caryopsis">Caryopsis</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/ait">AI Tooling</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/camera-plus">Camera Plus</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/cereal-obj">Cereal Object</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/custom-cursor">Custom Cursor</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/finite-state-machine">Finite State Machine</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/in-sunder">In Sunder</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/rubiks-cube">Rubik's Cube</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/rumbo">Rumbo</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/platformer-prototype">Simple Platformer Prototype</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/the-other-side">The Other Side</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/in-blood-letters">In Blood Letters</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/faetal-coins">Faetal Coins</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/mix-match-pro">Mix Match Pro</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/mandelbrot-map">Mandelbrot Map</a></li>
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
                     <button class="collapsible project-platform" data-platform-name="python">
                         <img class="logo" src="{{ 'assets/images/icons/python-logo.svg' | relative_url }}"></img>
                         Python
@@ -68,30 +92,6 @@ layout: "page-wrapper"
                         <!-- Here go rust projects -->
                         <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="python/discord-exquisite-cadaver">Discord Bot: Exquisite Cadaver</a></li>
                         <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="python/elemental-words">Elemental Words</a></li>
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="rust">
-                        <img class="logo" src="{{ 'assets/images/icons/rust-logo-blk.svg' | relative_url }}"></img>
-                        Rust
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go rust projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/netscan">Network Scanner</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/term-path-tracing">Terminal Path Tracing</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/terminal-renderer">Terminal Renderer</a></li>
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="cpp">
-                        <img class="logo" src="{{ 'assets/images/icons/c-icon.svg' | relative_url }}"></img>
-                        C/C++
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go C/C++ projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/console-renderer">Console Renderer</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/lixy-engine">Lixy Engine</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/seqlang">Sequentialang</a></li>
                     </ul>
                 </li>
                 <li class="pure-menu-item">
