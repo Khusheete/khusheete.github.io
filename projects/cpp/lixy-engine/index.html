@@ -5,10 +5,24 @@ layout: "projects"
 <h1 class="title">Lixy Engine</h1>
 
 <p>
-    The Lixy Engine is my first game/rendering framework. It is unfinished, I am in the process to implement 3D model
-    loading and the deferred rendering shading technique.
+    The Lixy Engine is my first proper game/rendering framework. I wanted to take all the rendering knowledge I've
+    acquired and try to create a game engine pretty much from scratch.
+</p>
+<p>
+    It uses flecs for it's ECS and OpenGL for the rendering. It supports loading wavefront <code>.obj</code> 3d
+    models and materials. It is build to use the deferred shading technique as objects properties are rendered in a
+    gbuffer before being rendered on screen. Though I have not implemented any shading model yet.
 </p>
 <p>
 <br/>
     The source code is available on <a href="https://github.com/Khusheete/lixy-engine">github</a> under the MIT license.
 </p>
+<br/>
+<div class="has-text-centered">
+    <div class="pure-u-2-3">
+        <video controls loop><source src="demo_video.webm" type="video/webm"/></video>
+    </div>
+    <div>
+        <img src="qrenderdoc_screen.png"/>
+    </div>
+</div>
