@@ -1,0 +1,46 @@
+---
+layout: "projects"
+---
+
+<h1 class="title">AImgProc</h1>
+
+<p>
+    This was a project I made in prep school for the TIPE (which is a project presented for the last exam). It is a
+    small tool that allows to script an OpenCL pipeline using the
+    <a href="https://rhai.rs/">rhai scripting language</a>. It was made to quickly apply some image processing in bulk
+    before feeding the images to a neural network (to help with image recognition). Sadly this project does not work
+    anymore because of an error in a dependency of the OpenCL library (ocl) I use - it does not compile -_-.
+</p>
+<p>
+    Using the scripted pipeline, I was able to apply some filters on this image:
+</p>
+<div class="has-text-centered"><div class="pure-u-1-3"><img src="base_image.jpg"/></div></div>
+<p>
+    I obtained:
+</p>
+<div class="has-text-centered">
+    <div class="pure-u-1-3">
+        <img src="sobel.jpg"/>
+        <p>Sobel Filter</p>
+    </div>
+    <div class="pure-u-1-3">
+        <img src="laplacian.jpg"/>
+        <p>5 point stencil Laplacian Filter</p>
+    </div>
+    <div class="pure-u-1-3">
+        <img src="laplacian_diag.jpg"/>
+        <p>9 point stencil Laplacian Filter</p>
+    </div>
+    <div class="pure-u-1-3">
+        <img src="gauss+sobel.jpg"/>
+        <p>Gauss + Sobel Filter</p>
+    </div>
+    <div class="pure-u-1-3">
+        <img src="gauss+laplacian.jpg"/>
+        <p>Gauss + 5 point stencil Laplacian Filter (very dim)</p>
+    </div>
+    <div class="pure-u-1-3">
+        <img src="gauss+laplacian_diag.jpg"/>
+        <p>Gauss + 9 point stencil Laplacian Filter (very dim)</p>
+    </div>
+</div>
