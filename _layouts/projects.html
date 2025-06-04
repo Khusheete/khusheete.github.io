@@ -2,133 +2,134 @@
 layout: "page-wrapper"
 
 ---
-
 <div id="sidenav-content-container" class="pure-g">
-    <div class="sidenav pure-u-1 pure-u-md-1-5 pure-u-lg-1-6">
-        <aside class="pure-menu"> <!-- TODO: is hidden mobile -->
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="godot">
-                        <img class="logo" src="{{ 'assets/images/icons/godot-logo.svg' | relative_url }}"></img>
-                        Godot Engine
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go godot projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/caryopsis">Caryopsis</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/ait">AI Tooling</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/battle-sim">Battle Sim</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/camera-plus">Camera Plus</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/cereal-obj">Cereal Object</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/custom-cursor">Custom Cursor</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/finite-state-machine">Finite State Machine</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/in-sunder">In Sunder</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/return-of-the-king">Return of the King</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/rubiks-cube">Rubik's Cube</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/rumbo">Rumbo</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/platformer-prototype">Simple Platformer Prototype</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/starrace">StarRace</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/terra-orbies">Terra Orbies</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/the-other-side">The Other Side</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/in-blood-letters">In Blood Letters</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/faetal-coins">Faetal Coins</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/mix-match-pro">Mix Match Pro</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/mandelbrot-map">Mandelbrot Map</a></li>
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="cpp">
-                        <img class="logo" src="{{ 'assets/images/icons/c-icon.svg' | relative_url }}"></img>
-                        C/C++
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go C/C++ projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/console-renderer">Console Renderer</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/lixy-engine">Lixy Engine</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/seqlang">Sequentialang</a></li>
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="rust">
-                        <img class="logo" src="{{ 'assets/images/icons/rust-logo-blk.svg' | relative_url }}"></img>
-                        Rust
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go rust projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/aimgproc">AImgProc</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/netscan">Network Scanner</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/term-path-tracing">Terminal Path Tracing</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/terminal-renderer">Terminal Renderer</a></li>
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="processing">
-                        <img class="logo rounded" src="{{ 'assets/images/icons/processing-icon.png' | relative_url }}"></img>
-                        Processing
-                    </button>
-                    <ul class="collapsible-content pure-menu pure-menu-list">
-                        <!-- Here go processing project links -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/anti-tic-tac-toe">Anti Tic-Tac-Toe</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/astar">A* Visualisation</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/battle">Battle</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/chronometer">Chronometer</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/collatz">Collatz Conjecture Visualisation</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/datasaurus-dozen">Datasaurus Dozen</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/fireworks">Firework Simulation</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/heat-diffusion">Diffusion Equation</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/lagrange-poly">Lagrange Polynomial</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/lissajous-curve-table">Lissajous Curve</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/mod-primes">Mod Primes</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/obj-gravitation">Object Gravitation</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/pi-fight">π Fight</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/quadtree-collision">Quadtree Collision</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/rubiks-cube-1x1x1">Rubik's Cube 1x1x1</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/sort-visualisation">Sort Visualisation</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/sudoku-solver">Sudoku Solver</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/territ">Territ</a></li>
-                        <!-- <li><a class="project-link" data-link="processing/shrinking-darts">Shrinking Darts</a></li> -->
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="ocaml">
-                        <img class="logo" src="{{ 'assets/images/icons/ocaml-logo.svg' | relative_url }}"></img>
-                        OCaml
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go OCaml projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="ocaml/lambda-calculus">Lambda Calculus</a></li>
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="python">
-                        <img class="logo" src="{{ 'assets/images/icons/python-logo.svg' | relative_url }}"></img>
-                        Python
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go python projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="python/discord-exquisite-cadaver">Discord Bot: Exquisite Cadaver</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="python/elemental-words">Elemental Words</a></li>
-                    </ul>
-                </li>
-                <li class="pure-menu-item">
-                    <button class="collapsible project-platform" data-platform-name="java">
-                        <img class="logo" src="{{ 'assets/images/icons/java-logo.svg' | relative_url }}"></img>
-                        Java
-                    </button>
-                    <ul class="collapsible-content">
-                        <!-- Here go Java projects -->
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="java/calculator">Calculator</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="java/c-mc64">C-MC64</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="java/epicycles-dft">Epicycles</a></li>
-                        <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="java/logo">Logo Interpreter</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- <hr class="mt-0 mb-0"> -->
-        </aside>
+  <div class="sidenav pure-u-1 pure-u-md-1-5 pure-u-lg-1-6">
+    <aside class="pure-menu">
+      <!-- TODO: is hidden mobile -->
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+          <button class="collapsible project-platform" data-platform-name="godot">
+            <img class="logo" src="{{ 'assets/images/icons/godot-logo.svg' | relative_url }}">
+            Godot Engine
+          </button>
+          <ul class="collapsible-content">
+            <!-- Here go godot projects -->
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/caryopsis">Caryopsis</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/ait">AI Tooling</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/battle-sim">Battle Sim</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/camera-plus">Camera Plus</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/cereal-obj">Cereal Object</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/custom-cursor">Custom Cursor</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/finite-state-machine">Finite State Machine</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/in-sunder">In Sunder</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/return-of-the-king">Return of the King</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/rubiks-cube">Rubik's Cube</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/rumbo">Rumbo</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/platformer-prototype">Simple Platformer Prototype</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/serious-balance">Serious Balance</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/starrace">StarRace</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/terra-orbies">Terra Orbies</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/the-other-side">The Other Side</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/in-blood-letters">In Blood Letters</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/faetal-coins">Faetal Coins</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/mix-match-pro">Mix Match Pro</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="godot/mandelbrot-map">Mandelbrot Map</a></li>
+          </ul>
+        </li>
+        <li class="pure-menu-item">
+          <button class="collapsible project-platform" data-platform-name="cpp">
+            <img class="logo" src="{{ 'assets/images/icons/c-icon.svg' | relative_url }}">
+            C/C++
+          </button>
+          <ul class="collapsible-content">
+            <!-- Here go C/C++ projects -->
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/console-renderer">Console Renderer</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/lixy-engine">Lixy Engine</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="cpp/seqlang">Sequentialang</a></li>
+          </ul>
+        </li>
+        <li class="pure-menu-item">
+          <button class="collapsible project-platform" data-platform-name="rust">
+            <img class="logo" src="{{ 'assets/images/icons/rust-logo-blk.svg' | relative_url }}">
+            Rust
+          </button>
+          <ul class="collapsible-content">
+            <!-- Here go rust projects -->
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/aimgproc">AImgProc</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/netscan">Network Scanner</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/term-path-tracing">Terminal Path Tracing</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="rust/terminal-renderer">Terminal Renderer</a></li>
+          </ul>
+        </li>
+        <li class="pure-menu-item">
+          <button class="collapsible project-platform" data-platform-name="processing">
+            <img class="logo rounded" src="{{ 'assets/images/icons/processing-icon.png' | relative_url }}">
+            Processing
+          </button>
+          <ul class="collapsible-content pure-menu pure-menu-list">
+            <!-- Here go processing project links -->
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/anti-tic-tac-toe">Anti Tic-Tac-Toe</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/astar">A* Visualisation</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/battle">Battle</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/chronometer">Chronometer</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/collatz">Collatz Conjecture Visualisation</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/datasaurus-dozen">Datasaurus Dozen</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/fireworks">Firework Simulation</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/heat-diffusion">Diffusion Equation</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/lagrange-poly">Lagrange Polynomial</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/lissajous-curve-table">Lissajous Curve</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/mod-primes">Mod Primes</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/obj-gravitation">Object Gravitation</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/pi-fight">π Fight</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/quadtree-collision">Quadtree Collision</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/rubiks-cube-1x1x1">Rubik's Cube 1x1x1</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/sort-visualisation">Sort Visualisation</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/sudoku-solver">Sudoku Solver</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="processing/territ">Territ</a></li>
+            <!-- <li><a class="project-link" data-link="processing/shrinking-darts">Shrinking Darts</a></li> -->
+          </ul>
+        </li>
+        <li class="pure-menu-item">
+          <button class="collapsible project-platform" data-platform-name="ocaml">
+            <img class="logo" src="{{ 'assets/images/icons/ocaml-logo.svg' | relative_url }}">
+            OCaml
+          </button>
+          <ul class="collapsible-content">
+            <!-- Here go OCaml projects -->
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="ocaml/lambda-calculus">Lambda Calculus</a></li>
+          </ul>
+        </li>
+        <li class="pure-menu-item">
+          <button class="collapsible project-platform" data-platform-name="python">
+            <img class="logo" src="{{ 'assets/images/icons/python-logo.svg' | relative_url }}">
+            Python
+          </button>
+          <ul class="collapsible-content">
+            <!-- Here go python projects -->
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="python/discord-exquisite-cadaver">Discord Bot: Exquisite Cadaver</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="python/elemental-words">Elemental Words</a></li>
+          </ul>
+        </li>
+        <li class="pure-menu-item">
+          <button class="collapsible project-platform" data-platform-name="java">
+            <img class="logo" src="{{ 'assets/images/icons/java-logo.svg' | relative_url }}">
+            Java
+          </button>
+          <ul class="collapsible-content">
+            <!-- Here go Java projects -->
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="java/calculator">Calculator</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="java/c-mc64">C-MC64</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="java/epicycles-dft">Epicycles</a></li>
+            <li class="pure-menu-item"><a class="project-link pure-menu-link" data-link="java/logo">Logo Interpreter</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- <hr class="mt-0 mb-0"> -->
+    </aside>
+  </div>
+  <div class="pure-u-1 pure-u-md-4-5 pure-u-lg-5-6">
+    <div class="content">
+      {{ content }}
     </div>
-    <div class="pure-u-1 pure-u-md-4-5 pure-u-lg-5-6">
-        <div class="content">
-            {{ content }}
-        </div>
-    </div>
+  </div>
 </div>
