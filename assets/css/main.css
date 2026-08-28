@@ -4,7 +4,7 @@
 @property --primary-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #562868;
+    initial-value: #512f61;
 }
 
 @property --dark-primary-color {
@@ -22,7 +22,7 @@
 @property --accent-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #ad644c;
+    initial-value: #cc8265;
 }
 
 @property --secondary-accent-color {
